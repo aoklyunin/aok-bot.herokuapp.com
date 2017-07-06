@@ -16,3 +16,6 @@ class VKHelper():
 
     def sendMessage(self, s, u_id):
         self.vk_api.messages.send(user_id=u_id, message=s)
+
+    def sendMessageWithPicture(self,s,u_id,pic):
+        self.vk_api.messages.send(user_id=u_id, message=s,attachment=pic)

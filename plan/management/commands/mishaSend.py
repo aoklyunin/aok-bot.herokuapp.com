@@ -34,5 +34,5 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         vkh = VKHelper(options['pass'][1])
-        vkh.sendMessage("Осталось хуй да нихуя: "+self.getDays()+".\n Пора вкалывать)", VKHelper.MISHA_ID)
+        vkh.sendMessageWithPicture("Осталось хуй да нихуя: "+self.getDays()+".\n Пора вкалывать)", VKHelper.MISHA_ID,'photo303154598_456239452')
 
