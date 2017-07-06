@@ -10,7 +10,7 @@ from django.core.management import BaseCommand
 # описание класса програмы
 class Command(BaseCommand):
     # описание программы
-    helf = 'checkCodes'
+    helf = 'sendVKmessage'
 
     def handle(self, *args, **options):
         print("yep")
